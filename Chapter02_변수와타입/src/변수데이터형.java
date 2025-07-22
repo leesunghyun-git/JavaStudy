@@ -56,10 +56,18 @@ public class 변수데이터형 {
  *     			 |		|		 구글 사장
  *     		     |      만든 사람의 고향
  *    			만든 사랑믜 아들의 장난감이름
+ *    
+ *    			=> 문자만 저장 (한글)
  *     논리형
- *       boolean
- *     
- *  
+ *       boolean : 1byte (true/false)
+ *       			제어문에서 주로 사용
+ *       ------------------------------------------------
+ *       byte < char < int < long < double
+ *       *** 데이터형은 언제든지 변경이 가능
+ *     	int = long
+ *      double = int
+ *      int = double
+ *  	
  *  
  */
 	public static void main(String[] args) {
