@@ -70,9 +70,28 @@ public class 변수데이터형 {
  *  	
  *  
  */
+/*
+ * 		국어점수 영어점수 수학점수 평균  총점   학점  저장
+ * 		 kor   eng    math  avg  tt      save
+ * 		                        double char 
+ * 		
+ * 	
+ */
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-			
+		 /*	int kor=100;
+			int eng=100;
+			int math=100;
+			double avg=100.00;
+			int total=300;
+			char score='A'; */
+		int kor=100,eng=100,math=100,total=300;
+		double avg=100.00;
+		char score='A'; //"A+" "A-" "A0"
+		//String score="A+"
+		boolean 재평가=false;
 	}
 
 }
