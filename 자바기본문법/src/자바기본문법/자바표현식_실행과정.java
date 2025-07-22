@@ -63,7 +63,7 @@ package 자바기본문법;
 
 
 public class 자바표현식_실행과정 {
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(0b1000); //2진법 표현
