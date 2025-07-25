@@ -252,7 +252,7 @@
  *  					문자열 => 실수 변경 : Double.parseDouble()
  *  					=> 모든 데이터형을 String으로 변경
  *  								 --------- valueOf()
- *  
+ *   
  *  	   출력
  *  			System.out.println() : 가장 줄바꿈
  *  			System.out.print() : 줄바꿈이 안된다

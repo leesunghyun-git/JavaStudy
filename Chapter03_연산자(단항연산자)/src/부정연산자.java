@@ -1,4 +1,4 @@
-/*
+ /*
  *  name 검색
  *  
  *  SELECT * FROM member WHERE name '%홍%'

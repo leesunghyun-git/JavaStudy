@@ -200,7 +200,7 @@ public class 비교연산자 {
 		//		   | false 
 		
 //		int x=10;
-//		int y=9;
+//		int y=9; 
 //		boolean result=(x>y) || (++y==x);
 //		System.out.println(result);
 //		System.out.println(x);
