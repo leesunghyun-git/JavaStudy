@@ -51,7 +51,9 @@ public class 정리_8 {
 		// TODO Auto-generated method stub
 		String s="0123456789";	
 		System.out.println("갯수:"+s.length());
-		System.
+		System.out.println(s.substring(5));
+		System.out.println(s.substring(5,8));
+		System.out.println(s.substring(s.indexOf("5"),s.lastIndexOf("8")));
 	}
 
 }

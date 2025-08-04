@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
-public class Main {
+public class 공바꾸기 {
 		public static void main(String[] agrs)
 		throws IOException
 
@@ -14,21 +14,22 @@ public class Main {
 			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 			StringTokenizer st;
 			st=new StringTokenizer(br.readLine());
-			int t=Integer.parseInt(st.nextToken());
 			int n=Integer.parseInt(st.nextToken());
-			int[] arr=new int[t];
+			int m=Integer.parseInt(st.nextToken());
+			int[] arr=new int[n];
 			for(int i=0;i<n;i++)
+				arr[i]=i+1;
+			for(int i=0;i<m;i++)
 			{	
 				st=new StringTokenizer(br.readLine());
 				int a=Integer.parseInt(st.nextToken());
 				int b=Integer.parseInt(st.nextToken());
-				int c=Integer.parseInt(st.nextToken());
-				for(int j=a-1;j<b;j++)
-				{
-					arr[j]=c;
-				}
+				int temp_a=arr[a-1];
+				arr[a-1]=arr[b-1];
+				arr[b-1]=temp_a;
+				
 			}
-			for(int i=0;i<t;i++)
+			for(int i=0;i<n;i++)
 			{
 				bw.write(arr[i]+" ");
 			}
