@@ -5,7 +5,7 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
-public class 진법변환 {
+public class 진법변환2 {
 
 	public static void main(String[] args) 
 	throws Exception {
@@ -13,26 +13,21 @@ public class 진법변환 {
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
 		st=new StringTokenizer(br.readLine());
-		String a=st.nextToken();
-		int[] arr=new int[a.length()];
-		for(int i=0;i<a.length();i++)
+		int a=Integer.parseInt(st.nextToken());
+		int n=Integer.parseInt(st.nextToken());
+		while(true)
 		{
-			if(a.charAt(i)>='A'&&a.charAt(i)<='Z')
-				arr[i]=(a.charAt(i)-'A'+10);
-			else if(a.charAt(i)>='0' && a.charAt(i)<='9')
-				arr[i]=a.charAt(i)-'0';
+			int b=a%n;
+			if(b>9)
+			{
+				bw.write(b+'A'-10);
+			}
+			else
+				bw.write(b+"");
+			a/=n;
+			if(a==0)
+				break;
 		}
-		int b=Integer.parseInt(st.nextToken());
-		int sum=0;
-		for(int i=0;i<a.length();i++)
-		{
-			
-			int temp=1;
-			for(int j=a.length()-i;j>1;j--)
-				temp*=b;
-			sum+=(temp*arr[i]);
-		}
-		bw.write(String.valueOf(sum));
 		bw.close();
 
 		
