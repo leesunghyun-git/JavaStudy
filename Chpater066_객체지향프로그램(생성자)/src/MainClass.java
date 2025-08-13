@@ -6,7 +6,20 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-
+// 확장
+/*
+ *  1. 확장을 해서 새로운 클래스 => 상속
+ *  2. 있는 그대로 사용 => 포함
+ *  3. 공통으로 사용되는 기능
+ *  	=> 패키지 : 기능을 모아서 관리
+ *  			 -------------- 공통 모듈
+ *  4. 시작과 동시에 처리하는 내용 : 생성자
+ *     ------------------- 데이터베이스 드라이버 등록
+ *     					   네트워크 서버 구동
+ *  웹에서는 명시적인 초기화가 많다
+ *  	  -----------
+ *  	  int page=1 / String fd=""
+ */
 public class MainClass {
 
 	public static void main(String[] args) throws Exception {
