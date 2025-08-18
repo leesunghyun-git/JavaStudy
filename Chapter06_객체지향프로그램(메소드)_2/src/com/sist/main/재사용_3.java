@@ -57,7 +57,6 @@ class Sub1 extends Super1
 	String home="서울";
 	public Sub1()
 	{
-		age=20;
 		name="심청이";
 	}
 	public void run()
@@ -76,16 +75,19 @@ public class 재사용_3 {
 		  Super1 sp=new Super1(); 
 		  Sub1 sb=new Sub1(); 
 		  Super1 ss=new Sub1();
+		  System.out.println("=== Super1 sp=new Super1() 의 결과 ===");
 		  System.out.println("sp의 나이:"+sp.age); 
 		  System.out.println("sp의 이름:"+sp.name);
 		  sp.run(); 
 		  sp.eat(); 
+		  System.out.println("=== Sub1 sb=new Sub1() 의 결과 ===");
 		  System.out.println("sb의 나이:"+sb.age);
 		  System.out.println("sb의 이름:"+sb.name); 
 		  System.out.println("sb의 집:"+sb.home);
 		  sb.run(); 
 		  sb.eat(); 
 		  sb.stop(); 
+		  System.out.println("=== Super1 ss=new Sub1() 의 결과 ===");
 		  System.out.println("ss의 나이:"+ss.age);
 		  System.out.println("ss의 이름:"+ss.name); 
 //		  System.out.println("ss의 집:"+ss.home);
