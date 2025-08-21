@@ -60,11 +60,32 @@ import java.io.IOException;
  * 	5) System : 프로그램 종료 / 메모리 해제 / 콘솔 출력
  * 		  System.exit(int a) => a=0 정상 종료
  * 		  System.gc() => 가비지 콜렉션
- * 	6) Wrapper
- * 		= Integer
- * 		= Double
- * 		= Boolean
- * 		= Long
+ * 		  System.in.read() / System.out.print() => 표준 입출력
+ * 		 ----------------- -------------------
+ * 			 예외처리				예외 처리 (X)
+ * 	6) Wrapper : 기본 데이터형을 쉽게 제어가 가능하게 만든 클래스
+ * 				 = 제네릭을 이용하는 목적
+ * 				   데이터형을 통일할 경우에 사용
+ * 				   <클래스>
+ * 				 = 문자열을 해당 데이터형으로 변경
+ * 				
+ * 		= Integer (int) => Integer.parseInt("10")
+ * 		= Double (double) => Double.parseDouble("10.5")
+ * 		= Boolean (boolean) => Boolean.parseBoolean("true")
+ * 		= Long (long) => Long.parseLong("10L")
+ * 	7) MessageFormat : SQL문장 / 복잡한 문장의 출력 형식
+ *  8) DecimalFormat : 숫자표현 세자리앞에 ,...
+ *  				   ##,### => 오라클 : 99,999
+ *  9) SimpleDateFormat : 날짜 변환
+ *  				  년도 : yyyy / yy
+ *  				   월 : MM / M
+ *  						1~9
+ *  				   일 : dd / d
+ *  				  시간 : hh / h
+ *  				   분 : mm / m
+ *  				   초 : ss / s
+ *  		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+ *  				   
  * 
  */
 public class 라이브러리_lang_정리 {
