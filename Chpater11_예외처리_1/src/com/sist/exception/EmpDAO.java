@@ -20,12 +20,13 @@ public class EmpDAO {
 		} catch(Exception ex)
 		{
 			ex.printStackTrace(); // getMessage() 
-		}
+		}	
 	}
 	// 2. 싱글턴 => 메모리 한개만 생성
 	// => 스프링 모든 객체가 싱글턴 newInstance() , getInstance()
 	public static EmpDAO newInstance()
 	{
+		
 		if(dao==null)
 		{
 			dao=new EmpDAO();
