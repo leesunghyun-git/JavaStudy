@@ -80,7 +80,7 @@ import java.io.IOException;
  *  				  년도 : yyyy / yy
  *  				   월 : MM / M
  *  						1~9
- *  				   일 : dd / d
+ *  				   일 : dd / d	
  *  				  시간 : hh / h
  *  				   분 : mm / m
  *  				   초 : ss / s
