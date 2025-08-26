@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/JavaDev/jsoup-1.21.1.jar"/>
 	<classpathentry kind="lib" path="C:/JavaDev/lombok-1.18.38.jar"/>
+	<classpathentry kind="lib" path="C:/JavaDev/ojdbc8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
