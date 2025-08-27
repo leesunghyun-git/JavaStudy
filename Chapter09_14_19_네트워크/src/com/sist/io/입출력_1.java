@@ -60,7 +60,6 @@ package com.sist.io; // 반드시 예외처리
  * 		파일복사(업로드,다운로드)
  * 
  */
-import java.io.FileInputStream;
 import java.io.FileReader;
 public class 입출력_1 {
 	
