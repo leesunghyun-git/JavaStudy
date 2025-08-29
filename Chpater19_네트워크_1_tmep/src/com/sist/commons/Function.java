@@ -13,9 +13,8 @@ public class Function {
 	public static final int ROOMOUT=220;
 	public static final int MYROOMOUT=230;
 	public static final int WAITUPDATE=240;
-	public static final int WAITTCHAT=300;
+	public static final int WAWITCHAT=300;
 	public static final int ROOMCHAT=310;
-	public static final int INFO=500;
 	public static final int CHATEND=900;
 	public static final int MYEND=910;
 	

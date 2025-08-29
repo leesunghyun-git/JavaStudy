@@ -28,56 +28,6 @@ import com.sist.commons.Function;
  *   3. 클라이언트와 통신
  *   	cass ....
  *   --------------------
- *   	네트워크
- *   	-----
- *   	  서버
- *   	   => 기능
- *   	   => 접속처리
- *   	   => 요청처리
- *     		  = 검색
- *            = 저장
- *            = 삭제
- *            = 수정
- *         클래스 다이어그램 (클래스: 객체지향 설계방식 => SOLID)
- *       -------------
- *       	Server => 클래스명
- *       -------------
- *          변수
- *          - ss:ServerSocket 
- *          - PORT:int
- *          - waitVC:Vector
- *       -------------
- *          메소드
- *           + Server() => 서버 가동
- *           + Run:void => 접속시 처리
- *       -------------
- *           |
- *           | 포함 클래스
- *       -------------
- *        Client
- *       -------------
- *        변수
- *        id:String
- *        name:String
- *        address:String
- *        pos:String
- *        s:Socket;
- *        in:BufferedReader; // 접속자 요청
- *        out:OutputStream;  // 서버 회신
- *       -------------
- *        +Client(Socket s) : 쓰레드 연결 => 클라이언트마다 따로 통신
- *        +run:void : 쓰레드 통신 (클라이언트와 연동)
- *         => case 문장 이용
- *        +messageTo(String msg):void : 반복 제거 => 한명에 데이터 전송
- *        +messageAll(String msg):void : 반복 제거 => 모두에게 데이터 전송
- *       -------------
- *        
- * 		   ----------
- * 			Server : 서버역할 , 클라이언트 연결 관리
- * 			Client : 각 클라이언트 연결 => 요청 처리
- * 		   ----------
- * 			Client : 응답을 받아서 화면에 출력
- *        
  * 
  */
 public class Server implements Runnable{
@@ -102,10 +52,9 @@ public class Server implements Runnable{
 	// 1. 서버가동 => 대기 상태 (접속시까지 기다린다)
 	
 	public static void main(String[] args) {
-		// 구동
-		Server server=new Server();
-		// 쓰레드를 이용해서 접속자 관리
+		Server server = new Server();
 		new Thread(server).start();
+		
 	}	
 	
 	public void stopServer() {
@@ -130,6 +79,8 @@ public class Server implements Runnable{
 				// 접속자의 IP / PORT
 				Client client = new Client(s);
 				// 접속자와 통신을 시작하라
+				System.out.println(s.getLocalAddress());
+				waitVC.add(client);
 				client.start();
 				
 			}
@@ -151,7 +102,7 @@ public class Server implements Runnable{
 				this.s=s;
 				in=new BufferedReader(new InputStreamReader(s.getInputStream()));
 				out=s.getOutputStream();
-			}catch(Exception ex) {}
+			}catch(Exception ex) {ex.printStackTrace();}
 		}
 		
 		public void run()
@@ -178,9 +129,9 @@ public class Server implements Runnable{
 							// LOGIN => 테이블 출력
 							// 현재 접속되어 있는 모든 Client에 전송
 							messageAll(Function.LOGIN+"|"+id+"|"+name+"|"+pos);
-							// 입장 메세지 전송					
-							messageAll(Function.WAITTCHAT+"|[알림 ☞]"+name+"님이 입장하셨습니다.|red");
-							waitVC.add(this);
+							// 입장 메세지 전송
+							messageAll(Function.WAWITCHAT+"|[알림 ☞]"+name+"님이 입장하셨습니다.|red");
+							
 							//로그인하는 사람 => 정보 받기
 							// 1. 로그인창 => 대기실창으로 변경
 							messageTo(Function.MYLOG+"|"+id+"|"+name);
@@ -193,50 +144,6 @@ public class Server implements Runnable{
 							
 							
 							
-							
-						}
-						break;
-						case Function.WAITTCHAT:
-						{
-							String m=st.nextToken();
-							String color=st.nextToken();
-							messageAll(Function.WAITTCHAT+"|["+name+"]"+m+"|"+color);
-							
-						}
-						break;
-						case Function.CHATEND:
-						{
-							messageAll(Function.WAITTCHAT+"|[알림 ☞]"+name+"님이 퇴장하셨습니다.|red");
-							messageAll(Function.CHATEND+"|"+id);
-							messageTo(Function.MYEND+"|");
-							
-							for(Client c:waitVC)
-							{
-								if(c.id.equals(id))
-								{
-									waitVC.remove(c);
-									in.close();
-									out.close();
-									break;
-								}
-							}
-								
-							
-							
-						}
-						break;
-						case Function.INFO:
-						{
-							String youId=st.nextToken();
-							for(Client user:waitVC)
-							{
-								if(user.id.equals(youId))
-								{
-									messageTo(Function.INFO+"|"
-											+user.id+"|"+user.name+"|"+user.address);
-									break;
-								}
-							}
 						}
 						
 					}

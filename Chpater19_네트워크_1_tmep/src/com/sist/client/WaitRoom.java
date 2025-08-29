@@ -4,7 +4,6 @@ import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JPanel;
-import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextArea;
@@ -19,7 +18,6 @@ public class WaitRoom extends JPanel{
 	DefaultTableModel model1,model2;
 	JTextPane pane;
 	JComboBox<String> box=new JComboBox<String>();
-	JScrollBar bar;
 	public WaitRoom()
 	{
 		String[] col= {"방이름","인원","상태"};
@@ -59,7 +57,6 @@ public class WaitRoom extends JPanel{
 		
 		pane=new JTextPane();
 		JScrollPane js3=new JScrollPane(pane);
-		bar=js3.getVerticalScrollBar();
 		js3.setBounds(420, 15, 360, 350);
 		add(js3);
 		pane.setEditable(false);

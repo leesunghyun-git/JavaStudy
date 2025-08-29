@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 public class ServerFrame extends JFrame implements ActionListener{
-	JButton start,end;
+	JButton start,end,textbox;
 	JLabel lb;
 	Server server;
 	
