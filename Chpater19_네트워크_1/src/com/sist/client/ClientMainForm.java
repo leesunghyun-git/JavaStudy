@@ -34,7 +34,7 @@ public class ClientMainForm extends JFrame implements ActionListener, MouseListe
 	JoinForm join = new JoinForm();
 	PostFindForm post = new PostFindForm();
 	WaitRoom wait = new WaitRoom();
-	private static final String IP = "192.168.0.36";
+	private static final String IP = "192.168.0.34";
 	private static final int PORT = 13579;
 	int selectRow = -1;
 

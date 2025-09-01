@@ -16,7 +16,8 @@ public class ServerFrame extends JFrame implements ActionListener{
 	{		
 		start=new JButton("서버구동");
 		end=new JButton("서버종료");
-		lb=new JLabel("채팅 프로그램");
+		String msg="서버 off";
+		lb=new JLabel(msg);
 		JPanel p=new JPanel();
 		p.add(start);
 		p.add(end);
