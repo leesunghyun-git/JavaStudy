@@ -20,7 +20,7 @@ public class PostFindForm extends JFrame {
 		String[] col= {"우편번호","주소"};
 		String[][] row=new String[0][2];
 		model=new DefaultTableModel(row,col) {
-
+		
 			@Override
 			public boolean isCellEditable(int row, int column) {
 				// TODO Auto-generated method stub
