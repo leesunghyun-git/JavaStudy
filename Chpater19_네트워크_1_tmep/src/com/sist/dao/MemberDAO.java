@@ -180,7 +180,10 @@ public class MemberDAO {
 		
 		return vo;
 	}
-	
+	public void insertBan(List<Integer> list)
+	{
+		
+	}
 	
 
 }

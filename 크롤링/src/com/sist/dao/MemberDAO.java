@@ -20,7 +20,7 @@ import java.util.List;
  * PHONE              VARCHAR2(13)  
  * NAME 	 NOT NULL VARCHAR2(15)
  * 
- * 	
+ * 
  * 
  */
 import com.sist.vo.MemberVO;
@@ -112,5 +112,19 @@ public class MemberDAO{
 			db.disConnection(conn,ps);
 		} 
 		return list;
+	}
+	public void deleteMember(int id_num) {
+		try 
+		{
+	        conn = db.getConnection(conn);
+	        String sql = "DELETE 회원목록 WHERE id_num=?";
+	        ps = conn.prepareStatement(sql);
+	        ps.setInt(1, id_num);
+	        ps.executeUpdate();
+	    } catch(Exception ex) {
+	        ex.printStackTrace();
+	    } finally {
+	        db.disConnection(conn, ps);
+	    }
 	}
 }

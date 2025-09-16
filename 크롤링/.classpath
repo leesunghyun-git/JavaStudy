@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/auto-service-annotations-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/auto-service-annotations-1.1.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/byte-buddy-1.17.6.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/byte-buddy-1.17.6-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/commons-exec-1.5.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/commons-exec-1.5.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/error_prone_annotations-2.38.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/error_prone_annotations-2.38.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/failureaccess-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/failureaccess-1.0.3-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/guava-33.4.8-jre.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/guava-33.4.8-jre-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/j2objc-annotations-3.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/j2objc-annotations-3.0.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/jspecify-1.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/jspecify-1.0.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-api-1.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-api-1.53.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-common-1.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-common-1.53.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-context-1.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-context-1.53.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-exporter-logging-1.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-exporter-logging-1.53.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-sdk-1.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-sdk-1.53.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-sdk-common-1.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-sdk-common-1.53.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-sdk-extension-autoconfigure-1.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-sdk-extension-autoconfigure-1.53.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-sdk-extension-autoconfigure-spi-1.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-sdk-extension-autoconfigure-spi-1.53.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-sdk-logs-1.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-sdk-logs-1.53.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-sdk-metrics-1.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-sdk-metrics-1.53.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-sdk-trace-1.53.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/opentelemetry-sdk-trace-1.53.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-api-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-api-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-chrome-driver-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-chrome-driver-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-chromium-driver-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-chromium-driver-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-devtools-v137-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-devtools-v137-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-devtools-v138-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-devtools-v138-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-devtools-v139-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-devtools-v139-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-edge-driver-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-edge-driver-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-firefox-driver-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-firefox-driver-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-http-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-http-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-ie-driver-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-ie-driver-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-java-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-java-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-json-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-json-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-manager-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-manager-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-os-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-os-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-remote-driver-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-remote-driver-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-safari-driver-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-safari-driver-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-support-4.35.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/selenium-java-4.35.0/selenium-support-4.35.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/ojdbc8.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/webdrivermanager-6.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/slf4j-api-2.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/slf4j-simple-2.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/commons-lang3-3.13.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/dec-0.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/commons-compress-1.28.0/commons-compress-1.28.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/httpcomponents-client-5.5-bin (2)/lib/commons-cli-1.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/httpcomponents-client-5.5-bin (2)/lib/httpclient5-5.5.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/httpcomponents-client-5.5-bin (2)/lib/httpclient5-cache-5.5.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/httpcomponents-client-5.5-bin (2)/lib/httpclient5-fluent-5.5.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/httpcomponents-client-5.5-bin (2)/lib/httpclient5-testing-5.5.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/httpcomponents-client-5.5-bin (2)/lib/httpcore5-5.3.4.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/httpcomponents-client-5.5-bin (2)/lib/httpcore5-5.3.4-tests.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/httpcomponents-client-5.5-bin (2)/lib/httpcore5-h2-5.3.4.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/httpcomponents-client-5.5-bin (2)/lib/httpcore5-reactive-5.3.4.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/httpcomponents-client-5.5-bin (2)/lib/httpcore5-testing-5.3.4.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/httpcomponents-client-5.5-bin (2)/lib/reactive-streams-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/httpcomponents-client-5.5-bin (2)/lib/rxjava-2.2.21.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/httpcomponents-client-5.5-bin (2)/lib/rxjava-3.1.9.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/httpcomponents-client-5.5-bin (2)/lib/slf4j-api-1.7.36.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/commons-io-2.20.0-bin/commons-io-2.20.0/commons-io-2.20.0.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/jsoup-1.21.1.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/gson-2.10.1.jar"/>
+	<classpathentry kind="lib" path="C:/javaDev/lombok-1.18.38.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

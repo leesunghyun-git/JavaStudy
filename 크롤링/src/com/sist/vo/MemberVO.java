@@ -16,4 +16,6 @@ public class MemberVO {
 	private String phone;
 	private String name;
 	private String bandate;
+	private String msg;
 }
+ 
